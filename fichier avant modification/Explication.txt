@@ -1,0 +1,1 @@
+Le dossier "fichier avant modification permet d'enregistrer les codes de chaque fichiers. Donc il faut refaire d'autre fichier en .txt
