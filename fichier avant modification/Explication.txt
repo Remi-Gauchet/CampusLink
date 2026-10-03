@@ -1,1 +1,2 @@
-Le dossier "fichier avant modification permet d'enregistrer les codes de chaque fichiers. Donc il faut refaire d'autre fichier en .txt
+Le dossier "fichier avant modification" permet d'enregistrer les codes de chaque fichiers avant de le modifier comme ça on ne perd rien. 
+Donc il faut refaire d'autre fichier en .txt
