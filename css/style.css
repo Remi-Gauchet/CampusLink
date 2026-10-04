@@ -93,6 +93,7 @@ footer {
   background-image: url("../images/footer-cuir.png");
   background-size: cover;
   display: flex;
+  gap: 5px;
   color: white;
   align-items: center;
   justify-content: center;
