@@ -478,7 +478,7 @@ header nav a[aria-current="page"] {
 /* le formulaire reprend l'allure des cartes du site */
 .formulaire {
     max-width: 600px;
-    margin-left: 100px;   /* décale le formulaire vers la droite */
+    margin-left: 150px;   /* décale le formulaire vers la droite */
     padding: 20px;
     background-color: white;
     border: 2px solid #4b4b4b;
