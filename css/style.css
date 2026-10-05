@@ -280,6 +280,36 @@ gap: 3rem;
 
 /* ---------- AUTRES PAGES ---------- */
 
+/* la maison en haut à gauche ramène au sommaire */
+header {
+    position: relative;
+}
+
+.retour-sommaire {
+    position: absolute;
+    top: 0.75rem;
+    left: 1rem;
+    color: #FFFFFF;
+    transition: all 0.3s ease-in-out;
+}
+
+.retour-sommaire svg {
+    display: block;
+}
+
+.retour-sommaire:hover,
+.retour-sommaire:focus-visible {
+    color: #d87a19;
+}
+
+/* sur petit écran, la maison passe au-dessus du logo au lieu de le recouvrir */
+@media (max-width: 900px) {
+    .retour-sommaire {
+        position: static;
+        align-self: flex-start;
+    }
+}
+
 /* le lien de la page où l'on se trouve reste orange dans le menu */
 header nav a[aria-current="page"] {
     color: #d87a19;
