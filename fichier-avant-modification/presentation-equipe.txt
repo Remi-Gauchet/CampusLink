@@ -14,19 +14,18 @@
   <nav aria-label="Menu principal">
     <ul>
       <li><a href="../locaux/nos-salles.html">Nos locaux</a></li>
-      <li><a href="../equipe/presentation-equipe.html" aria-current="page">Notre équipe</a></li>
       <li><a href="../locaux/equipements.html">Nos équipements</a></li>
       <li><a href="../declarer-incident.html">Déclarer un incident</a></li>
       <li><a href="../gestion-des-incidents.html">Suivi des incidents</a></li>
     </ul>
   </nav>
-</header>
+</header> 
 <main>
-    <section class="accueil nos-equipes">
+    <section class="nos-equipes">
     <h1>Nos Équipes</h1>
     <p>Nous avons la chance de compter parmi nous une équipe aux talents et aux expériences diverses et variées.</p>
     </section>
-    <section class="acces direction">
+    <section class="direction">
     <h2>La direction</h2>
     <ul>
       <li>
