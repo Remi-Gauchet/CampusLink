@@ -13,7 +13,8 @@
   </a>
   <nav aria-label="Menu principal">
     <ul>
-        <li><a href="../equipe/presentation-equipe.html">Notre équipe</a></li>
+      <li><a href="../locaux/nos-salles.html">Nos locaux</a></li>
+      <li><a href="../equipe/presentation-equipe.html">Notre équipe</a></li>
       <li><a href="equipements.html">Nos équipements</a></li>
       <li><a href="../declarer-incident.html">Déclarer un incident</a></li>
       <li><a href="../gestion-des-incidents.html">Suivi des incidents</a></li>
@@ -23,9 +24,73 @@
 <main>
 
 <section class="reservation">
+   <section class="accueil nos-bureaux">
     <h1>Reserver une salle</h1>
-    <p>Besoin de réserver une salle ?<br>
-        Nous mettons à votre dispositon salles de réunion, bureaux, et salle de réception.</p>
+    <p>Nous mettons à votre dispositon salles de réunion, bureaux, et salle de réception.<br>
+      Quelle salle souhaitez-vous réserver ?</p>
+        <figure>
+          <img src="../images/espace-client.jpg" alt="Espace client : Intérieur luxueux. Table basse et canapés en cuir noir.">
+          <div class="boutons">
+      <a href="" class="btn">Espace client : étage 50</a>
+      </div>
+        </figure>
+
+        <figure>
+          <img src="../images/salle-de-reunion.jpg" alt="Salle de réunion luxueuse. Une table est entourée par des fauteuil.">
+          <div class="boutons">
+      <a href="" class="btn">Salle de réunion : étage 48</a>
+      </div>
+        </figure>
+
+    </section>
+
+
+
+    
+    <form class="formulaire" action="gestion-des-incidents.html" method="get">
+
+      <label for="nom">Votre nom</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="email">Votre adresse e-mail</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="lieu">Où se trouve l'appareil ?</label>
+      <select id="lieu" name="lieu" required>
+        <option value="">Choisir un lieu</option>
+        <option value="reunion">Salle de réunion</option>
+        <option value="bureau">Bureau</option>
+        <option value="reception">Salle de réception</option>
+        <option value="detente">Espace détente</option>
+      </select>
+
+      <label for="equipement">Quel appareil est en panne ?</label>
+      <select id="equipement" name="equipement" required>
+        <option value="">Choisir un appareil</option>
+        <option value="ordinateur">Ordinateur</option>
+        <option value="ecran">Écran ou vidéoprojecteur</option>
+        <option value="imprimante">Imprimante</option>
+        <option value="reseau">Réseau ou Wi-Fi</option>
+        <option value="autre">Autre</option>
+      </select>
+
+      <p>Niveau d'urgence</p>
+      <div class="urgence">
+        <input type="radio" id="faible" name="urgence" value="faible" required>
+        <label for="faible">Faible</label>
+        <input type="radio" id="moyenne" name="urgence" value="moyenne">
+        <label for="moyenne">Moyenne</label>
+        <input type="radio" id="elevee" name="urgence" value="elevee">
+        <label for="elevee">Élevée</label>
+      </div>
+
+      <label for="description">Décrivez le problème</label>
+      <textarea id="description" name="description" rows="5" required></textarea>
+
+      <button type="submit" class="btn">Envoyer le signalement</button>
+    </form>
+
+    
 
 
 
