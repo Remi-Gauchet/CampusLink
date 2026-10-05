@@ -1,39 +1,87 @@
-<DOCTYPE html>
-<html lang=""fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name=""viewport" content="width=device-width, initial-scale=1,0">
-    <title>CampusLink - Tableau de bord</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusLink - Sommaire</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-<header class="site-header">
-    <h1>CampusLink</h1>
-    <p>Gestion technique du Campus</p>
+<header>
+  <a href="index.html">
+    <img src="images/marque-sombre.png" alt="Logo et titre CampusLink">
+  </a>
+  <nav aria-label="Menu principal">
+    <ul>
+      <li><a href="locaux/nos-salles.html">Nos locaux</a></li>
+      <li><a href="equipe/presentation-equipe.html">Notre équipe</a></li>
+      <li><a href="locaux/equipements.html">Nos équipements</a></li>
+      <li><a href="declarer-incident.html">Déclarer un incident</a></li>
+      <li><a href="gestion-des-incidents.html">Suivi des incidents</a></li>
+    </ul>
+  </nav>
 </header>
-<nav class="main-nav" aria aria-label="Navigation principale">
-    <a href="index.html">Sommaire</a>
-    <a href="locaux/nos-salles.html">Salles</a>
-    <a href="gestion-des-incidents.html">Gestion des incidents</a>
-    <a href="locaux/equipements.html">Voir les equipements</a>
-    <a href="declarerincident.html">Déclarer un incidents</a>
-    <a href="equipe/presentation-equipe.html">Présentation des collaborateurs</a>"
+<main>
+    <section class="accueil">
+    <h1>Bienvenue sur CampusLink</h1>
+    <p>CampusLink est le site interne de nos bureaux : vous y trouvez les locaux, l'équipe, le matériel et le suivi des pannes.</p>
+    <p>Choisissez une page dans le sommaire ci-dessous.</p>
+    </section>
 
-    </nav>
-   
-<main class=""container">
-    <section>
-        <h2>Tableau de bord</h2>
-        <p>Bienvenue dans l'interface de gestion de CampusLink.</p>
-    </section> 
+    <section class="acces">
+    <h2>Sommaire</h2>
+    <ol class="sommaire">
+      <li>
+        <a href="locaux/nos-salles.html">
+          <strong>Nos locaux</strong>
+          <span>Les bureaux, les salles et les espaces détente.</span>
+        </a>
+      </li>
+      <li>
+        <a href="locaux/reserver-salle.html">
+          <strong>Réserver une salle</strong>
+          <span>Les salles de réunion disponibles.</span>
+        </a>
+      </li>
+      <li>
+        <a href="locaux/equipements.html">
+          <strong>Nos équipements</strong>
+          <span>Le matériel installé dans les salles.</span>
+        </a>
+      </li>
+      <li>
+        <a href="equipe/presentation-equipe.html">
+          <strong>Notre équipe</strong>
+          <span>Les personnes qui travaillent ici.</span>
+        </a>
+      </li>
+      <li>
+        <a href="declarer-incident.html">
+          <strong>Déclarer un incident</strong>
+          <span>Prévenir l'équipe technique d'une panne.</span>
+        </a>
+      </li>
+      <li>
+        <a href="gestion-des-incidents.html">
+          <strong>Suivi des incidents</strong>
+          <span>Voir où en sont les pannes signalées.</span>
+        </a>
+      </li>
+    </ol>
+    </section>
+
+    <section class="acces">
+    <h2>Un appareil ne marche plus ?</h2>
+    <p>Signalez le problème, l'équipe technique s'en occupe et vous pouvez suivre l'avancement.</p>
+    <div class="boutons">
+      <a href="declarer-incident.html" class="btn">Déclarer un incident</a>
+      <a href="gestion-des-incidents.html" class="btn btn-sombre">Suivre un incident</a>
+    </div>
+    </section>
 </main>
-<footer class="site-footer">
+<footer>
+    <img src="images/logo.png" alt="Logo CampusLink" width="30" height="40">
     <p>&copy; 2026 CampusLink. Tous droits réservés.</p>
     </footer>
 </body>
-
-
-</head>
-
-
 </html>
