@@ -7,7 +7,10 @@
 
 }
 
-/* ---------- BODY ---------- */
+/*---------------------------------------------*/
+/*                  BODY                       */
+/*---------------------------------------------*/
+
 
 body {
     margin:0;
@@ -16,7 +19,10 @@ body {
     color: #000000;
 }
 
-/* ---------- HEADER ---------- */
+/*---------------------------------------------*/
+/*                   HEADER            */
+/*---------------------------------------------*/
+
 
 header {
     background-color: #4b4b4b;
@@ -55,7 +61,10 @@ header nav a:hover {
   color: #d87a19;
 }
 
-/* ---------- MAIN ---------- */
+/*---------------------------------------------*/
+/*                 MAIN                        */
+/*---------------------------------------------*/
+
 
 main {
     background-image: url("../images/background-clair.jpg");
@@ -76,7 +85,10 @@ main {
     gap: 10px;
 }
 
-/* ---------- LISTES ---------- */
+/*---------------------------------------------*/
+/*                 LISTES                      */
+/*---------------------------------------------*/
+
 
 ul {
 list-style: none;  /* retire les puces devant chaque liste */
@@ -94,7 +106,10 @@ gap: 3rem;
   min-width: 100%;  /* puis elle réajuste la taille du texte à 100% de la largeur de sa section */
 }
 
-/* ---------- ILLUSTRATIONS ---------- */
+/*---------------------------------------------*/
+/*               ILLUSTRATIONS                 */
+/*---------------------------------------------*/
+
 
 .direction img {
   width: 100%;
@@ -128,7 +143,10 @@ gap: 3rem;
 }
 
 
-/* ---------- LES BOUTONS ---------- */
+/*---------------------------------------------*/
+/*                LES BOUTONS                  */
+/*---------------------------------------------*/
+
 
 .boutons {
     display: flex;
@@ -191,7 +209,10 @@ gap: 3rem;
     color: white;
 }
 
-/* ---------- PAGE D'ACCUEIL ---------- */
+/*---------------------------------------------*/
+/*               PAGE D'ACCUEIL                */
+/*---------------------------------------------*/
+
 
 .accueil,
 .acces {
@@ -223,7 +244,10 @@ gap: 3rem;
     margin-bottom: 0.5rem;
 }
 
-/* ---------- SOMMAIRE ---------- */
+/*---------------------------------------------*/
+/*                 SOMMAIRE                    */
+/*---------------------------------------------*/
+
 
 .sommaire {
     display: grid;
@@ -250,7 +274,7 @@ gap: 3rem;
     color: #000000;
     text-decoration: none;
     border: 2px solid #4b4b4b;
-    border-left: 8px solid #d87a19;
+    border-left: 15px solid #d87a19;
     border-radius: 6px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
     transition: all 0.3s ease-in-out;
@@ -278,7 +302,10 @@ gap: 3rem;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* ---------- AUTRES PAGES ---------- */
+/*---------------------------------------------*/
+/*                AUTRES PAGES                 */
+/*---------------------------------------------*/
+
 
 /* la maison en haut à gauche ramène au sommaire */
 header {
@@ -327,7 +354,7 @@ header nav a[aria-current="page"] {
     padding: 20px;
     background-color: white;
     border: 2px solid #4b4b4b;
-    border-left: 8px solid #d87a19;
+    border-left: 15px solid #d87a19;
     border-radius: 6px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
 }
@@ -355,14 +382,17 @@ header nav a[aria-current="page"] {
     margin: 0.5rem 0;
 }
 
-/* ---------- PAGE D'AIDE ÉLECTRIQUE ---------- */
+/*---------------------------------------------*/
+/*           PAGE D'AIDE ÉLECTRIQUE            */
+/*---------------------------------------------*/
+
 
 /* encadré gris foncé pour les consignes de sécurité */
 .alerte {
     padding: 20px;
     background-color: #4b4b4b;
     color: white;
-    border-left: 8px solid #d87a19;
+    border-left: 15px solid #d87a19;
     border-radius: 6px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
 }
@@ -381,7 +411,7 @@ header nav a[aria-current="page"] {
     margin-bottom: 1rem;
     background-color: white;
     border: 2px solid #4b4b4b;
-    border-left: 8px solid #d87a19;
+    border-left: 15px solid #d87a19;
     border-radius: 6px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
 }
@@ -422,11 +452,11 @@ header nav a[aria-current="page"] {
 }
 
 .reflexe-oui {
-    border-top: 8px solid #d87a19;
+    border-top: 15px solid #d87a19;
 }
 
 .reflexe-non {
-    border-top: 8px solid #4b4b4b;
+    border-top: 15px solid #4b4b4b;
 }
 
 .reflexe h3 {
@@ -440,15 +470,19 @@ header nav a[aria-current="page"] {
     padding-left: 20px;
 }
 
-/* ---------- FORMULAIRE ---------- */
+/*---------------------------------------------*/
+/*                FORMULAIRE                   */
+/*---------------------------------------------*/
+
 
 /* le formulaire reprend l'allure des cartes du site */
 .formulaire {
     max-width: 600px;
+    margin-left: 100px;   /* décale le formulaire vers la droite */
     padding: 20px;
     background-color: white;
     border: 2px solid #4b4b4b;
-    border-left: 8px solid #d87a19;
+    border-left: 15px solid #d87a19;
     border-radius: 6px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
 }
@@ -490,7 +524,10 @@ header nav a[aria-current="page"] {
     cursor: pointer;
 }
 
-/* ---------- FOOTER ---------- */
+/*---------------------------------------------*/
+/*                  FOOTER                     */
+/*---------------------------------------------*/
+
 
 footer {
   padding: 0.1rem;
