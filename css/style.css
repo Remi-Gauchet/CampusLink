@@ -150,6 +150,9 @@ gap: 3rem;
   object-position: 25% center;
 }
 
+.reservation img {
+    width: 100%;
+}
 
 /*---------------------------------------------*/
 /*                LES BOUTONS                  */
