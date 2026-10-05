@@ -154,6 +154,10 @@ gap: 3rem;
     width: 100%;
 }
 
+.serveur img {
+    width: 100%;
+}
+
 /*---------------------------------------------*/
 /*                LES BOUTONS                  */
 /*---------------------------------------------*/
@@ -396,6 +400,38 @@ header nav a[aria-current="page"] {
 .acces figcaption h3 {
     margin: 0.5rem 0;
 }
+
+/*---------------------------------------------*/
+/*           MISE EN PAGE APPAREILS            */
+/*---------------------------------------------*/
+
+.appareils {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.appareils li {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+  background: #000000;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+}
+
+.appareils strong {
+  font-size: 2rem;
+  color: #d87a19;
+}
+
+
 
 /*---------------------------------------------*/
 /*           PAGE D'AIDE ÉLECTRIQUE            */
