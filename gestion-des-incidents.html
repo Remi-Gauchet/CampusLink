@@ -34,7 +34,7 @@
 
     <section class="acces">
     <h2>Incidents déclarés</h2>
-    <p>Aucun incident déclaré pour le moment.</p>
+    <p id="incident">Aucun incident déclaré pour le moment.</p>
     </section>
 
     <section class="acces">
@@ -50,5 +50,24 @@
     <img src="images/logo.png" alt="Logo CampusLink" width="30" height="40">
     <p>&copy; 2026 CampusLink. Tous droits réservés.</p>
     </footer>
+<script>
+  // récupère ce que le formulaire a mis dans l'adresse de la page
+  const donnees = new URLSearchParams(window.location.search);
+
+  if (donnees.has("nom")) {
+    // chaque variable porte le "name" du champ du formulaire
+    const nom = donnees.get("nom");
+    const lieu = donnees.get("lieu");
+    const equipement = donnees.get("equipement");
+    const urgence = donnees.get("urgence");
+    const description = donnees.get("description");
+
+    document.getElementById("incident").textContent =
+      nom + " a signalé : " + equipement + " (" + lieu + "), urgence " + urgence + " — " + description;
+
+    // enlève les données de l'adresse : au refresh, la page redevient vide
+    history.replaceState(null, "", window.location.pathname);
+  }
+</script>
 </body>
 </html>

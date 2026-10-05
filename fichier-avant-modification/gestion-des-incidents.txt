@@ -1,2 +1,54 @@
-<DOCTYPE html>
-<html lang=""fr">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusLink - Suivi des incidents</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <a href="index.html" class="retour-sommaire" aria-label="Retour au sommaire" title="Retour au sommaire">
+    <svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true">
+      <path fill="currentColor" d="M12 3 2 12h3v8h5v-6h4v6h5v-8h3z"/>
+    </svg>
+  </a>
+  <a href="index.html">
+    <img src="images/marque-sombre.png" alt="Logo et titre CampusLink">
+  </a>
+  <nav aria-label="Menu principal">
+    <ul>
+      <li><a href="locaux/nos-salles.html">Nos locaux</a></li>
+      <li><a href="equipe/presentation-equipe.html">Notre équipe</a></li>
+      <li><a href="locaux/equipements.html">Nos équipements</a></li>
+      <li><a href="declarer-incident.html">Déclarer un incident</a></li>
+      <li><a href="gestion-des-incidents.html" aria-current="page">Suivi des incidents</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+    <section class="accueil">
+    <h1>Suivi des incidents</h1>
+    <p>Retrouvez ici les pannes signalées et voyez où en est leur réparation.</p>
+    </section>
+
+    <section class="acces">
+    <h2>Incidents déclarés</h2>
+    <p>Aucun incident déclaré pour le moment.</p>
+    </section>
+
+    <section class="acces">
+    <h2>Une nouvelle panne ?</h2>
+    <p>Signalez le problème, l'équipe technique s'en occupe et vous pourrez suivre l'avancement sur cette page.</p>
+    <div class="boutons">
+      <a href="declarer-incident.html" class="btn">Déclarer un incident</a>
+      <a href="index.html" class="btn btn-sombre">Retour au sommaire</a>
+    </div>
+    </section>
+</main>
+<footer>
+    <img src="images/logo.png" alt="Logo CampusLink" width="30" height="40">
+    <p>&copy; 2026 CampusLink. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
