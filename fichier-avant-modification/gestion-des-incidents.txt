@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
+<header>  
   <a href="index.html" class="retour-sommaire" aria-label="Retour au sommaire" title="Retour au sommaire">
     <svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true">
       <path fill="currentColor" d="M12 3 2 12h3v8h5v-6h4v6h5v-8h3z"/>
@@ -34,7 +34,21 @@
 
     <section class="acces">
     <h2>Incidents déclarés</h2>
-    <p>Aucun incident déclaré pour le moment.</p>
+  <div class="reflexes" id="incidents">
+  <div class="reflexe reflexe-oui">
+    <h3>Vidéoprojecteur - Salle de réunion</h3>
+    <p>Déclaré le 05/10/2026 | Urgence : élevée</p>
+    <p>Statut : en cours de réparation</p>
+    <p>L'image ne s'affiche plus depuis ce matin.</p>
+  </div>
+
+  <div class="reflexe reflexe-non">
+    <h3>Wi-Fi - Espace détente</h3>
+    <p>Déclaré le 28/09/2026 | Urgence : faible</p>
+    <p>Statut : résolu</p>
+    <p>La connexion était très lente.</p>
+  </div>
+</div>
     </section>
 
     <section class="acces">
@@ -50,5 +64,52 @@
     <img src="images/logo.png" alt="Logo CampusLink" width="30" height="40">
     <p>&copy; 2026 CampusLink. Tous droits réservés.</p>
     </footer>
+<script>
+  // récupère ce que le formulaire a mis dans l'adresse de la page
+  const donnees = new URLSearchParams(window.location.search);
+
+  if (donnees.has("nom")) {
+    // le texte à afficher pour chaque "value" du formulaire
+    const lieux = {
+      reunion: "Salle de réunion", bureau: "Bureau", reception: "Salle de réception",
+      detente: "Espace détente", autre: "Autre lieu"
+    };
+    const equipements = {
+      ordinateur: "Ordinateur", ecran: "Écran ou vidéoprojecteur", imprimante: "Imprimante",
+      reseau: "Réseau ou Wi-Fi", climatisation: "Climatisation", autre: "Autre appareil"
+    };
+    const urgences = { faible: "faible", moyenne: "moyenne", elevee: "élevée" };
+
+    // chaque variable porte le "name" du champ du formulaire
+    const nom = donnees.get("nom");
+    const lieu = lieux[donnees.get("lieu")];
+    const equipement = equipements[donnees.get("equipement")];
+    const urgence = urgences[donnees.get("urgence")];
+    const description = donnees.get("description");
+    const date = new Date().toLocaleDateString("fr-FR");
+
+    // fabrique une carte comme celles déjà présentes dans la page
+    const carte = document.createElement("div");
+    carte.className = "reflexe reflexe-oui";
+
+    const lignes = [
+      ["h3", equipement + " - " + lieu],
+      ["p", "Déclaré le " + date + " par " + nom + " | Urgence : " + urgence],
+      ["p", "Statut : signalé"],
+      ["p", description]
+    ];
+    for (const [balise, texte] of lignes) {
+      const element = document.createElement(balise);
+      element.textContent = texte;
+      carte.appendChild(element);
+    }
+
+    // la nouvelle carte se place en premier
+    document.getElementById("incidents").prepend(carte);
+
+    // enlève les données de l'adresse : au refresh, la carte disparaît
+    history.replaceState(null, "", window.location.pathname);
+  }
+</script>
 </body>
 </html>
