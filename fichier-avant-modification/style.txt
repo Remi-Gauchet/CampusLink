@@ -436,53 +436,6 @@ gap: 3rem;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* ---------- AUTRES PAGES ---------- */
-
-/* le lien de la page où l'on se trouve reste orange dans le menu */
-header nav a[aria-current="page"] {
-    color: #d87a19;
-}
-
-.acces ul {
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-}
-
-/* les photos reprennent l'allure des cartes du sommaire */
-.acces figure {
-    margin: 0;
-    padding: 20px;
-    background-color: white;
-    border: 2px solid #4b4b4b;
-    border-left: 8px solid #d87a19;
-    border-radius: 6px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
-}
-
-/* deux cartes par ligne, comme le sommaire */
-.acces.direction li {
-    flex: 1 1 400px;
-}
-
-/* les deux photos tiennent côte à côte dans la carte */
-.acces .locaux img {
-    max-width: calc(50% - 4px);
-}
-
-/* les cartes de l'espace détente ont toutes la même largeur */
-#espace-detente li {
-    width: 100%;
-}
-
-.acces figure + figure {
-    margin-top: 1rem;
-}
-
-.acces figcaption h3 {
-    margin: 0.5rem 0;
-}
-
 /* ---------- PAGE D'AIDE ÉLECTRIQUE ---------- */
 
 /* encadré gris foncé pour les consignes de sécurité */

@@ -1,2 +1,82 @@
-<DOCTYPE html>
-<html lang=""fr">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusLink - Suivi des incidents</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <a href="index.html">
+    <img src="images/marque-sombre.png" alt="Logo et titre CampusLink">
+  </a>
+  <nav aria-label="Menu principal">
+    <ul>
+      <li><a href="locaux/nos-salles.html">Nos locaux</a></li>
+      <li><a href="equipe/presentation-equipe.html">Notre équipe</a></li>
+      <li><a href="locaux/equipements.html">Nos équipements</a></li>
+      <li><a href="declarer-incident.html">Déclarer un incident</a></li>
+      <li><a href="gestion-des-incidents.html" aria-current="page">Suivi des incidents</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+    <section class="accueil">
+    <h1>Suivi des incidents</h1>
+    <p>Retrouvez ici les pannes signalées et voyez où en est leur réparation.</p>
+    <p>Cliquez sur un incident pour afficher le détail de son avancement.</p>
+    </section>
+
+    <section class="acces">
+    <h2>Incidents en cours</h2>
+    <details class="panne">
+      <summary>Vidéoprojecteur en panne, salle de réunion du 12<sup>e</sup> étage — En cours de réparation</summary>
+      <ol>
+        <li>Incident signalé à l'équipe technique.</li>
+        <li>Pris en charge par un technicien.</li>
+        <li>Pièce de rechange commandée, en attente de livraison.</li>
+      </ol>
+    </details>
+    <details class="panne">
+      <summary>Imprimante bloquée, open space du 14<sup>e</sup> étage — Pris en charge</summary>
+      <ol>
+        <li>Incident signalé à l'équipe technique.</li>
+        <li>Pris en charge par un technicien.</li>
+      </ol>
+    </details>
+    <details class="panne">
+      <summary>Prise réseau défectueuse, bureau 2807 — Signalé</summary>
+      <ol>
+        <li>Incident signalé à l'équipe technique.</li>
+      </ol>
+    </details>
+    </section>
+
+    <section class="acces">
+    <h2>Incidents résolus</h2>
+    <details class="panne">
+      <summary>Climatisation à l'arrêt, salle de réception — Résolu</summary>
+      <ol>
+        <li>Incident signalé à l'équipe technique.</li>
+        <li>Pris en charge par un technicien.</li>
+        <li>Réparation effectuée, la climatisation fonctionne à nouveau.</li>
+      </ol>
+    </details>
+    </section>
+
+    <section class="acces">
+    <h2>Une nouvelle panne ?</h2>
+    <p>Signalez le problème, l'équipe technique s'en occupe et vous pourrez suivre l'avancement sur cette page.</p>
+    <div class="boutons">
+      <a href="declarer-incident.html" class="btn">Déclarer un incident</a>
+      <a href="index.html" class="btn btn-sombre">Retour au sommaire</a>
+    </div>
+    </section>
+</main>
+<footer>
+    <img src="images/logo.png" alt="Logo CampusLink" width="30" height="40">
+    <p>&copy; 2026 CampusLink. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
